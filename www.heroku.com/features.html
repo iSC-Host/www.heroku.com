@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en" data-form-id="">
+  
+<!-- Mirrored from www.heroku.com/features by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jun 2015 14:07:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"caf7511827","applicationID":"2121548","transactionName":"IAxWFxZYWg8GRk1AAgQGS0wXX1kU","queueTime":14,"applicationTime":46,"agentToken":null,"agent":"js-agent.newrelic.com/nr-632.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):(o[e]||(o[e]=[]),void o[e].push(n))}var r=e("ee").create(),o={};n.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=(e(2),window),f=u.document,s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <title>Heroku | Features</title>
+
+      <meta name="description" content="Heroku supports Ruby, Node.js, Python, Java, Scala, and PHP, data stores, 150 add-ons, easy deployment and effortless app management.">
+
+    <meta property="og:image" content="https://d3k90kvix375hb.cloudfront.net/images/home/scale.png">
+    
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://d3k90kvix375hb.cloudfront.net/assets/favicon-996ad58fe5a2f448b510d1d4761ecca8.ico" />
+
+    <script src="../d3k90kvix375hb.cloudfront.net/assets/modernizr-f14163e4cc2dd8e22d0fe6a2658d068b.js"></script>
+
+    <link rel="stylesheet" media="all" href="../d3k90kvix375hb.cloudfront.net/assets/application-43c8d982c1b592d1d5270ab08b75ab3b.css" />
+
+    <link rel="canonical" href="features.html" />
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="O6lfdwsGGcYN+Bo/P29BaRD5ke1Pf1YDq/ydqfmkoXSlUJ9hyYEL4Qg/bX+22Z0PAJy18jVtFL8vn9IUWRZtlA==" />
+  </head>
+
+  <body class="features-page">
+      <!-- Google Tag Manager -->
+  <noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-JD26"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-JD26');</script>
+  <!-- End Google Tag Manager -->
+
+
+    <div class="page">
+      <header id="header">
+  <nav id="navigation" role="navigation">
+    <div class="wrapper">
+      <h1 id="logo">
+        <a href="home.html">Heroku</a>
+      </h1>
+
+      <span class="mobile-nav">Show nav</span>
+
+      <ul>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="https://elements.heroku.com/">Elements</a></li>
+        <li><a href="https://blog.heroku.com/">Blog</a></li>
+        <li><a href="https://devcenter.heroku.com/">Documentation</a></li>
+        <li><a href="https://help.heroku.com/">Support</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+        <li>
+          <a href="#" class="show-site-search"><span class="icon-search"></span></a>
+          <form action="https://www.heroku.com/search" class="site-search" method="get">
+            <div class="search-input">
+              <gcse:searchbox-only resultsUrl='/search'></gcse:searchbox-only>
+            </div>
+          </form>
+        </li>
+
+          <li class="user sign-up">
+            <a href="https://id.heroku.com/">Log in</a>
+            <span>or</span>
+
+            <a class="sign-up highlight" data-trackable="{&quot;event&quot;:&quot;clicked&quot;,&quot;target&quot;:&quot;signup&quot;,&quot;page&quot;:&quot;www-header&quot;}" href="https://signup.heroku.com/www-header">Sign up</a>
+          </li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+</header>
+
+
+
+        <div id="page-title">
+          <div class="wrapper">
+            <span id="title">  Features
+</span>
+          </div>
+        </div>
+
+      <div class="page-content">
+        <div class="wrapper">
+          
+
+<h2>Build and Run Your Apps, Your Way.</h2>
+
+<h4>
+  Heroku supports <strong>Ruby, Node.js, Python, Java, and PHP</strong> so you can
+  use the languages you already know to build and deploy apps on Heroku.
+  <a href="https://devcenter.heroku.com/categories/language-support">Learn more</a>
+  about our language support or <a data-trackable="{&quot;event&quot;:&quot;clicked&quot;,&quot;target&quot;:&quot;signup&quot;,&quot;page&quot;:&quot;www-features&quot;}" href="https://signup.heroku.com/www-features">sign up now</a>.
+</h4>
+
+<section class="features one-col">
+  <img class="" alt="Heroku language Support" width="1060px" data-hires="//d3k90kvix375hb.cloudfront.net/assets/features/features-languages@2x-0f0e1d0a35537b971f70176980ccf2ab.png" src="../d3k90kvix375hb.cloudfront.net/assets/features/features-languages-10b07dd48a826b3272a0215bc9554dc5.png" />
+</section>
+
+<section class="features three-col">
+
+  <ul class="feature-list">
+    <li>
+      <h3>Build</h3>
+
+      <p>
+        Once you push your application source code, Heroku prepares it for execution by retrieving the necessary dependencies specific to the frameworks and languages you use in your app. Heroku supports Ruby, Node.js, Python, Java and PHP by default, but you can also choose another language by using a custom buildback.
+      </p>
+    </li>
+  </ul>
+
+  <ul class="feature-list">
+    <li>
+      <h3>Config</h3>
+
+      <p>
+        Heroku lets you manage
+        <a href="https://devcenter.heroku.com/articles/config-vars">environment-specific configurations</a>
+        (such as credentials for backing services) separately from your source
+        code for greater safety and portability. In Heroku, this data can be managed
+        with config vars, which are made available to your running application as
+        simple environment variables.
+      </p>
+    </li>
+  </ul>
+
+  <ul class="feature-list">
+    <li>
+      <h3>Run</h3>
+
+      <p>
+        Sometimes you want to
+        <a href="https://devcenter.heroku.com/articles/one-off-dynos">run one-off dynos</a>
+        on your app&mdash;run a script in your app's environment, use your app's console, etc.
+        Using <code>heroku run</code>, you can quickly spin up a one-off instance of your app
+        environment to run ad-hoc commands.
+      </p>
+    </li>
+  </ul>
+</section>
+
+
+<h2>Add the Power of Heroku Elements to Your App</h2>
+
+<h4>
+  Heroku Elements are tools, components and services for adding functionality to your app. Heroku Elements include Add-ons, Buildpacks and Buttons.
+</h4>
+
+<section class="features three-col elements">
+
+  <ul class="feature-list">
+    <li>
+      <img class="" alt="Add-ons" width="64px" data-hires="//d3k90kvix375hb.cloudfront.net/assets/features/features-addons@2x-27d15323238df56021d3c1cbf4952fe2.png" src="../d3k90kvix375hb.cloudfront.net/assets/features/features-addons-2639c6236fc11837bf9f88deadae7f1e.png" />
+        <h3>Add-ons</h3>
+
+        <p>
+          Use technologies you love with over 150 Add-ons from the <a href="https://elements.heroku.com/">Elements Marketplace</a>. Add-ons are fully-managed services, integrated for use with Heroku. They can be provisioned and scaled in one command. Add-ons provide services for logging, caching, monitoring, persistence and more.
+        </p>
+
+    </li>
+  </ul>
+
+  <ul class="feature-list">
+    <li>
+      <img class="" alt="Buildpacks" width="64px" data-hires="//d3k90kvix375hb.cloudfront.net/assets/features/features-buildpacks@2x-415e933a012440deea5cb69b53b0de4f.png" src="../d3k90kvix375hb.cloudfront.net/assets/features/features-buildpacks-244b3304e47f084437850412fbe8b984.png" />
+        <h3>Buildpacks</h3>
+
+        <p>
+          Buildpacks are open source scripts for compiling apps on Heroku, specific to the frameworks and languages in your app. Heroku supports default buildpacks for Ruby, Node.js, Python, Java and PHP, but you can also choose from hundreds of community buildpacks in the <a href="https://elements.heroku.com/">Elements Marketplace</a>.
+        </p>
+
+    </li>
+  </ul>
+
+  <ul class="feature-list">
+    <li>
+      <img class="" alt="Buttons" width="64px" data-hires="//d3k90kvix375hb.cloudfront.net/assets/features/features-buttons@2x-970c348d0aa52327cfe1ed8338cbb4dd.png" src="../d3k90kvix375hb.cloudfront.net/assets/features/features-buttons-dfa7b1b83e6ae4cd4bf9b183dd57128f.png" />
+        <h3>Buttons</h3>
+
+        <p>
+          Heroku Buttons let you one-click provision, configure and deploy third party components, libraries and pattern apps. The <a href="https://elements.heroku.com/">Elements Marketplace</a> lets you see what Buttons are trending from hundreds of open source repos, so you can find the perfect recipe to start building apps quickly.
+        </p>
+
+    </li>
+  </ul>
+</section>
+
+
+<h2>Deploy your app quickly, easily and with options that work for you.</h2>
+
+<section class="features four-col">
+  <ul class="feature-list">
+    <li>
+      <img class="" alt="Git Deploy" height="67px" width="240px" data-hires="//d3k90kvix375hb.cloudfront.net/assets/features/features-git-deploy@2x-bbe7d17fc3264650b4c4d88440eb62a9.png" src="../d3k90kvix375hb.cloudfront.net/assets/features/features-git-deploy-d7cb69bfb3cadba34849fd181420cf99.png" />
+
+      <h3>Deploy with Git</h3>
+
+      <p>
+        Use git to deploy apps to Heroku in one command. We'll build and run
+        the source application, handling compilation, dependencies, assets and
+        executables so you can focus on code. Code pushed to the heroku remote
+        will be live and running on the platform quickly.
+        <a href="https://devcenter.heroku.com/articles/git">Learn More</a>.
+      </p>
+    </li>
+  </ul>
+
+  <ul class="feature-list">
+    <li>
+      <img class="" alt="Heroku Fork" height="67px" width="240px" data-hires="//d3k90kvix375hb.cloudfront.net/assets/features/features-heroku-fork@2x-ef412052162ecb1ab5c2ccde4ed6c1da.png" src="../d3k90kvix375hb.cloudfront.net/assets/features/features-heroku-fork-014fddddd259345114c1f53dec2a6198.png" />
+
+      <h3>Heroku Fork</h3>
+
+      <p>
+        <a href="https://devcenter.heroku.com/articles/fork-app">Heroku fork</a>
+        creates a duplicate instance of your application, running on Heroku
+        immediately. It can be used to rapidly spin up new application
+        environments, demonstrate feature branches on a running app, or migrate
+        apps to Heroku Europe.
+      </p>
+    </li>
+  </ul>
+
+  <ul class="feature-list">
+    <li>
+      <img class="" alt="Releases" height="67px" width="240px" data-hires="//d3k90kvix375hb.cloudfront.net/assets/features/features-releases@2x-1666da05239a15e370ebdc9f546d94c2.png" src="../d3k90kvix375hb.cloudfront.net/assets/features/features-releases-566bf885a363de78a12ec35f85deafed.png" />
+
+      <h3>Releases</h3>
+
+      <p>
+        Whenever you deploy changes to your app, Heroku creates a new release
+        of your app. We keep your app's release history, and you can list all
+        of your releases, who made them, and when. And if something goes wrong
+        in a release, use the rollback command to roll back to the latest
+        release or a specific release until you can fix the problem.
+        <a href="https://devcenter.heroku.com/articles/releases">Learn more</a>.
+      </p>
+    </li>
+  </ul>
+
+  <ul class="feature-list">
+    <li>
+      <img class="" alt="Heroku Regions" height="67px" width="240px" data-hires="//d3k90kvix375hb.cloudfront.net/assets/features/features-regions@2x-ee5c4c9544a1889c44c102c6ce23e081.png" src="../d3k90kvix375hb.cloudfront.net/assets/features/features-regions-c13d54f41297dfb484f3062653821f99.png" />
+
+      <h3>Regions</h3>
+
+      <p>
+        Heroku has two geographic regions &mdash; US and Europe &mdash; so you
+        can deploy apps closer to your users, with less latency.
+        <a href="https://devcenter.heroku.com/articles/regions">Learn More</a>.
+      </p>
+    </li>
+  </ul>
+</section>
+
+
+<section class="sales-inline center">
+
+  <div class="mod-signup">
+    <a class="button" data-trackable="{&quot;event&quot;:&quot;clicked&quot;,&quot;target&quot;:&quot;signup&quot;,&quot;page&quot;:&quot;www-features&quot;}" href="https://signup.heroku.com/www-features">Sign up for free</a>
+
+  </div>
+
+</section>
+
+<h2>Scale with ease, when you need to.</h2>
+
+<h4>Heroku lets you grow quickly to support user growth, traffic spikes and new features.</h4>
+
+<section class="features four-col">
+  <ul class="feature-list">
+    <li>
+      <h3>Dyno size</h3>
+
+      <p>
+        Dynos on Heroku are available in
+        <a href="https://devcenter.heroku.com/articles/dyno-size">multiple sizes</a>.
+        1X and 2X dynos have variable performance. 1X dynos get 512MB of memory and 1X CPU share. 2X dynos get
+        1024MB of memory and 2X CPU share. Performance Dynos have consistent performance, 6 GB of RAM, 8 CPU
+        cores and 30x the compute of 1X dynos.
+      </p>
+    </li>
+  </ul>
+
+  <ul class="feature-list">
+    <li>
+      <h3>Scale easily</h3>
+
+      <p>
+        On Heroku, your app is easily divided into worker, web, queue and other
+        process types which can be scaled up independently and on-demand. This
+        provides a simple, powerful model for addressing user growth, traffic
+        spikes, and demanding background tasks with ease and flexibility.
+        <a href="https://devcenter.heroku.com/articles/scaling">Learn more about scaling on Heroku</a>.
+      </p>
+    </li>
+  </ul>
+
+  <ul class="feature-list">
+    <li>
+      <h3>Addons:upgrade</h3>
+
+      <p>
+        Heroku Add-ons come in a variety of plans to fit your application and
+        ensure you only pay for what you need. When it's time to grow,
+        <a href="https://devcenter.heroku.com/articles/managing-add-ons">upgrade</a>
+        to a new plan on an on-demand basis.
+      </p>
+    </li>
+  </ul>
+
+  <ul class="feature-list">
+    <li>
+      <h3>Dashboard scale</h3>
+
+      <p>
+        Use the Dashboard to easily scale up the number of dynos available to
+        your app. Just use a slider and apply changes when you’re ready to
+        grow.
+      </p>
+    </li>
+  </ul>
+</section>
+
+
+<h2>Get comprehensive visibility and monitoring.</h2>
+<h4>Heroku provides built-in tools so you get the information you need to make better decisions.</h4>
+
+<section class="features three-col">
+  <ul class="feature-list">
+    <li>
+      <h3>Heroku Logs</h3>
+
+      <p>
+        Heroku brings simplicity and order back to logging. Heroku
+        automatically collates and routes logs from every single part of your
+        application into a single channel, providing the foundation for truly
+        comprehensive, extensible, app-centric logging.
+        <a href="https://devcenter.heroku.com/articles/logging">Learn more about Heroku's logging</a>.
+      </p>
+    </li>
+  </ul>
+
+  <ul class="feature-list">
+    <li>
+      <h3>Monitoring Add-ons</h3>
+
+      <p>
+        Our Elements Marketplace has a wide selection of logging, monitoring and visibility Add-ons
+        for you to choose from, including providers like
+        <a href="https://elements.heroku.com/addons/newrelic">New Relic</a>,
+        <a href="https://elements.heroku.com/addons/papertrail">Papertrail</a>
+        and <a href="https://elements.heroku.com/addons/librato">Librato</a> and more.
+      </p>
+    </li>
+  </ul>
+
+  <ul class="feature-list">
+    <li>
+      <h3>Status</h3>
+
+      <p>
+        Heroku Status provides information on Heroku’s current status, current
+        and historical uptime, and incident history.
+        <a href="https://status.heroku.com/">Visit Heroku Status.</a>
+      </p>
+
+    </li>
+  </ul>
+</section>
+
+
+<h2>Heavy Duty Tools</h2>
+<h4>Heroku gives you powerful, beautiful, intuitive interfaces to build and manage your app. Minimal distractions and robust features let you focus on getting things done.</h4>
+
+<section class="features one-col">
+  <img class="anchor" alt="Dashboard and CLI" height="543px" width="1060px" data-hires="//d3k90kvix375hb.cloudfront.net/assets/features/features-tools@2x-40f5a65db34f680a33684ee101fb96c6.png" src="../d3k90kvix375hb.cloudfront.net/assets/features/features-tools-f1ebbb8ded9f206004078d1cbbb5e5d5.png" />
+</section>
+
+<section class="features two-col">
+  <ul class="feature-list">
+    <li>
+      <h3>Dashboard</h3>
+
+      <p>
+        When you sign into Heroku on www.heroku.com, you'll see the
+        <a href="https://dashboard.heroku.com/">Heroku Dashboard</a>. Dashboard
+        provides an overview of all your apps, resources they're using, recent
+        activity, and collaborators, giving you a beautiful, cohesive interface
+        to manage all of your apps.
+      </p>
+    </li>
+  </ul>
+
+  <ul class="feature-list">
+    <li>
+
+      <h3>Toolbelt CLI</h3>
+
+      <p>
+        Our command line client,
+        <a href="https://toolbelt.heroku.com/">Heroku Toolbelt</a>,
+        gives you everything you need to get started with Heroku. Installs easily
+        on OS X, Windows, Debian/Ubuntu or from source, and provides you with
+        the Heroku CLI, a tool for running your apps locally, and Git.
+      </p>
+    </li>
+  </ul>
+</section>
+
+<section class="sales-inline center">
+
+  <div class="mod-signup">
+    <a class="button" data-trackable="{&quot;event&quot;:&quot;clicked&quot;,&quot;target&quot;:&quot;signup&quot;,&quot;page&quot;:&quot;www-features&quot;}" href="https://signup.heroku.com/www-features">Sign up for free</a>
+
+  </div>
+
+</section>
+
+<h2>Heroku Postgres</h2>
+<h4>
+  <a href="postgres.html">Heroku Postgres</a> provides a SQL database-as-a-service that lets you focus on building your application instead of messing around with database management.
+</h4>
+
+<section class="features four-col">
+  <ul class="feature-list">
+    <li>
+      <h3>Data Clips</h3>
+
+      <p>
+        <a href="postgres.html#dataclips">Dataclips</a>  allow
+        the results of SQL queries on a Heroku Postgres database to be easily
+        shared. Simply create a query on postgres.heroku.com, and then share
+        the resulting URL with co-workers, colleagues, or the world. Data clips
+        can be shared through e-mail, Twitter, IRC, or any other medium - they
+        are just URLs.
+      </p>
+    </li>
+  </ul>
+
+  <ul class="feature-list">
+    <li>
+      <h3>Postgres Backups</h3>
+
+      <p>
+        Use the
+        <a href="https://devcenter.heroku.com/articles/heroku-postgresql">PG Backups Add-on</a>
+        to easily capture and manage backups for your Heroku Postgres
+        databases. This can be used to safely upgrade your database to larger
+        plans.
+      </p>
+    </li>
+  </ul>
+
+  <ul class="feature-list">
+    <li>
+      <h3>Postgres Fork</h3>
+
+      <p>
+        <a href="https://devcenter.heroku.com/articles/heroku-postgres-fork">Fork your Postgres database</a>
+        just like you fork source code. It creates a perfect, byte-for-byte
+        clone of your database with a single command and adds it to your
+        account as a separate object.
+      </p>
+    </li>
+  </ul>
+
+  <ul class="feature-list">
+    <li>
+      <h3>Postgres Follow</h3>
+
+      <p>
+        <a href="https://devcenter.heroku.com/articles/heroku-postgres-follower-databases">Postgres follow</a>
+        allows you to create read-only replicas that stay up-to-date with the changes to your database.
+        Followers are similar to "hot-standbys" or "read-only slaves". Followers can be used to horizontally
+        scale the read capacity of your database. Read queries can be directed to followers
+        and write queries to the primary database.
+      </p>
+    </li>
+  </ul>
+</section>
+
+
+<hr>
+<div class="enterprise-banner">
+  <h2>Heroku Enterprise</h2>
+  <h4>The developer experience you love, the enterprise services you need.</h4>
+
+  <section class="features four-col">
+    <ul class="feature-list">
+      <li>
+        <span class="icon-banner-collab"></span>
+        <p>Enhanced Team Collaboration and Administration</p>
+      </li>
+    </ul>
+
+    <ul class="feature-list">
+      <li>
+        <span class="icon-banner-control"></span>
+        <p>Fine Grained Access Controls</p>
+      </li>
+    </ul>
+
+    <ul class="feature-list">
+      <li>
+        <span class="icon-banner-confidence"></span>
+        <p>Centralized Application Resource Visibility and Reporting</p>
+      </li>
+    </ul>
+
+    <ul class="feature-list">
+      <li>
+        <span class="icon-banner-support"></span>
+        <p>Enterprise Support SLAs and Heroku Solutions Architects</p>
+      </li>
+    </ul>
+
+    <div class="cta center">
+      <a href="enterprise.html" class="button">Learn more about Heroku Enterprise</a>
+    </div>
+
+  </section>
+</div>
+
+<h2>Partner and API Services</h2>
+<h4>Heroku is more than a service &ndash; it's an extensible platform where you can make new tools, create useful integrations, reach Heroku customers all over the world and even build your business.</h4>
+
+<section class="features four-col">
+  <ul class="feature-list">
+    <li>
+      <h3>Platform API</h3>
+
+      <p>
+        The Heroku Platform API makes it possible to automate, extend and
+        combine the Heroku platform with other services in a programmatic,
+        self-service way.
+        <a href="https://devcenter.heroku.com/articles/platform-api-reference">Get started</a>.
+      </p>
+    </li>
+  </ul>
+
+  <ul class="feature-list">
+    <li>
+      <h3>OAuth</h3>
+
+      <p>
+        Developers building integrations and services that use the Heroku
+        Platform API can provide a better experience to their users with OAuth.
+        <a href="https://devcenter.heroku.com/articles/oauth">Learn More</a>.
+      </p>
+    </li>
+  </ul>
+
+  <ul class="feature-list">
+    <li>
+      <h3>Add-on Providers</h3>
+
+      <p>
+        Become an Add-on provider to make your cloud service available to tens
+        of thousands of Heroku developers.
+        <a href="https://addons.heroku.com/provider">Get started</a>.
+      </p>
+    </li>
+  </ul>
+
+  <ul class="feature-list">
+    <li>
+      <h3>Heroku Partners</h3>
+
+      <p>
+        Heroku Partners are digital agencies, development groups, and
+        application consultancies that help customers build amazing apps on
+        Heroku.
+        <a href="https://partners.heroku.com/program">Join the Partner Program</a>
+      </p>
+    </li>
+  </ul>
+</section>
+
+<h2>Documentation &amp; Support</h2>
+<h4>We're here to help make your apps amazing. We have tons of documentation and best practices to offer, plus hands-on support when you need extra help.</h4>
+
+<section class="features four-col">
+  <ul class="feature-list">
+    <li>
+      <h3>How Heroku Works</h3>
+
+      <p>
+        A high-level technical description of how Heroku works. It ties
+        together many of the concepts you’ll encounter while writing,
+        configuring, deploying and running applications on the Heroku platform.
+        To learn all about it,
+        <a href="https://devcenter.heroku.com/articles/how-heroku-works">visit our Dev Center</a>.
+      </p>
+    </li>
+  </ul>
+
+  <ul class="feature-list">
+    <li>
+      <h3>Best Practices</h3>
+
+      <p>
+        Heroku is designed to maximize developer productivity and application
+        maintainability. <a href="https://devcenter.heroku.com/articles/architecting-apps">Learn more</a>
+        about building better cloud applications on Heroku following the Twelve Factor methodology.
+      </p>
+    </li>
+  </ul>
+
+  <ul class="feature-list">
+    <li>
+      <h3>Free Support</h3>
+
+      <p>
+        Support is available for all Heroku users through our
+        <a href="https://help.heroku.com/">Help platform</a>, which lets you
+        file tickets with our support team and get more information on common
+        questions and issues.
+      </p>
+    </li>
+  </ul>
+
+  <ul class="feature-list">
+    <li>
+
+      <h3>Premium Support</h3>
+
+      <p>
+        For critical production apps and enterprises, Heroku Premium Support
+        offers guaranteed response times, 24&times;7 support, and 1:1 help in running your
+        application.
+        <a href="critical.html">Contact our Customer Advocates</a>.
+      </p>
+    </li>
+  </ul>
+</section>
+
+
+<section class="sales center">
+
+  <div class="mod-signup">
+    <a class="button" data-trackable="{&quot;event&quot;:&quot;clicked&quot;,&quot;target&quot;:&quot;signup&quot;,&quot;page&quot;:&quot;www-features&quot;}" href="https://signup.heroku.com/www-features">Sign up for free</a>
+      <p>Have a question? Give our sales team a call. <a href="tel:+18662781349">+1 (866) 278-1349</a>.</p>
+
+  </div>
+
+</section>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="main-footer">
+  <div class=" wrapper">
+    <h1 class="brand"><a target="blank" class="logo" href="http://salesforce.com/">salesforce.com</a></h1>
+
+    <nav>
+      <ul class="primary">
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="critical.html">Critical Apps</a></li>
+        <li><a href="https://elements.heroku.com/">Elements</a></li>
+        <li><a href="postgres.html">Postgres</a></li>
+        <li><a href="https://partners.heroku.com/">Partners</a></li>
+        <li><a href="https://devcenter.heroku.com/">Documentation</a></li>
+        <li><a href="https://help.heroku.com/">Help</a></li>
+        <li><a href="https://status.heroku.com/">Status</a></li>
+      </ul>
+
+      <ul class="secondary">
+        <li><a href="what.html">What is Heroku</a></li>
+        <li><a href="about.html">About Heroku</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="customers.html">Customers</a></li>
+        <li><a href="https://blog.heroku.com/">Blog</a></li>
+        <li><a href="http://engineering.heroku.com/">Engineering</a></li>
+      </ul>
+
+      <ul class="tertiary">
+        <li><a href="home.html">heroku.com</a></li>
+        <li><a href="policy/tos.html">Legal</a></li>
+        <li><a href="policy/privacy.html">Privacy Policy</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+    <script src="../d3k90kvix375hb.cloudfront.net/assets/application-c15f843d8049e678e5e9dcf9d19293e8.js"></script>
+  </body>
+
+<!-- Mirrored from www.heroku.com/features by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jun 2015 14:07:54 GMT -->
+</html>
